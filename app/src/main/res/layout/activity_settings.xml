@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raizConfig"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- topo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="18dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="14dp">
+
+        <TextView
+            android:id="@+id/btnVoltar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="#1C1C1E"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="Definições"
+            android:textColor="#1C1C1E"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDF0" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <!-- QUALIDADE -->
+            <TextView
+                style="@style/TituloSecao"
+                android:text="Qualidade do vídeo" />
+
+            <TextView
+                android:id="@+id/optAlta"
+                style="@style/LinhaOpcao"
+                android:text="Alta — 1080p" />
+
+            <TextView
+                android:id="@+id/optMedia"
+                style="@style/LinhaOpcao"
+                android:text="Média — 720p" />
+
+            <TextView
+                android:id="@+id/optBaixa"
+                style="@style/LinhaOpcao"
+                android:text="Baixa — 480p" />
+
+            <!-- SOM -->
+            <TextView
+                style="@style/TituloSecao"
+                android:text="Som" />
+
+            <TextView
+                android:id="@+id/optSom"
+                style="@style/LinhaOpcao"
+                android:text="Gravar som interno" />
+
+            <TextView
+                style="@style/Explicacao"
+                android:text="Grava só o áudio que o celular está tocando. O microfone nunca é usado." />
+
+            <!-- TEMPO -->
+            <TextView
+                style="@style/TituloSecao"
+                android:text="Tempo máximo por vídeo" />
+
+            <TextView
+                android:id="@+id/opt30"
+                style="@style/LinhaOpcao"
+                android:text="30 minutos" />
+
+            <TextView
+                android:id="@+id/opt60"
+                style="@style/LinhaOpcao"
+                android:text="1 hora" />
+
+            <TextView
+                android:id="@+id/opt120"
+                style="@style/LinhaOpcao"
+                android:text="2 horas" />
+
+            <TextView
+                style="@style/Explicacao"
+                android:text="Ao atingir esse tempo o vídeo é salvo e a gravação continua em um arquivo novo, sem parar." />
+
+            <!-- BOLHA -->
+            <TextView
+                style="@style/TituloSecao"
+                android:text="Bola flutuante" />
+
+            <TextView
+                android:id="@+id/optBolha"
+                style="@style/LinhaOpcao"
+                android:text="Mostrar a bola flutuante" />
+
+            <TextView
+                android:id="@+id/optEsconder"
+                style="@style/LinhaOpcao"
+                android:text="Esconder a bola durante a gravação" />
+
+            <TextView
+                style="@style/Explicacao"
+                android:text="Ligue esta opção se a bola estiver aparecendo dentro do vídeo gravado. Os controles continuam na notificação." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

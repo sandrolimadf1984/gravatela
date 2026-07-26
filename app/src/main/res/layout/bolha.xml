@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raizBolha"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <!-- botoes que aparecem ao tocar na bola -->
+    <LinearLayout
+        android:id="@+id/menuBolha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btnBolhaFechar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_botao_branco"
+            android:gravity="center"
+            android:text="✕"
+            android:textColor="#6E6E73"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnBolhaConfig"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_botao_branco"
+            android:gravity="center"
+            android:text="⚙"
+            android:textColor="#FF6D00"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/btnBolhaCasa"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_botao_branco"
+            android:gravity="center"
+            android:text="⌂"
+            android:textColor="#FF6D00"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/btnBolhaPausar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_botao_branco"
+            android:gravity="center"
+            android:text="❚❚"
+            android:textColor="#FF6D00"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btnBolhaParar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_botao_branco"
+            android:gravity="center"
+            android:text="■"
+            android:textColor="#D32F2F"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnBolhaGravar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_botao_branco"
+            android:gravity="center"
+            android:text="●"
+            android:textColor="#D32F2F"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- a bola -->
+    <TextView
+        android:id="@+id/bolha"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_bolha_laranja"
+        android:gravity="center"
+        android:text="●"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
